@@ -1,5 +1,73 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 375px;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.logo {
+    width: 127px;
+    margin: 0 0 0 15px;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 17px;
+    margin: 0 10px;
+}
+
+.container {
+    width: 375px;
+    margin: 0 auto;
+}
+
+.post-header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+h2 {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 13px;
+    font-weight: normal;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+#location {
+    font-size: 12px;
+    margin-left: 0px;
+}
+
+#post {
+    width: 100%;
+}
+
+.icons {
+    display: flex;
+    height: 22.13px;
+    width: 104.34px;
+    justify-content: space-between;
+    margin: 20px 10px 12px 10px;
+}
+
+p span {
+    font-weight: bold;
+}

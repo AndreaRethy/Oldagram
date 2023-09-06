@@ -1,19 +1,24 @@
 <html>
     <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <header>
-            <img src="images/logo.png">
+            <img class="logo" src="images/logo.png">
             <img class="avatar" src="images/user-avatar.png">
         </header>
         
         <section>
             <div class="container">
-                <img class="avatar" id="avatar" src="images/avatar-vangogh.jpg">
-                <div>
-                    <h2 id="name">Vincent van Gogh</h2>
-                    <p id="location">Zundert, Netherlands</p>
+                <div class="post-header">
+                    <img class="avatar" id="avatar" src="images/avatar-vangogh.jpg">
+                    <div>
+                        <h2 id="name">Vincent van Gogh</h2>
+                        <p id="location">Zundert, Netherlands</p>
+                    </div>
                 </div>
                 <img id="post" src="images/post-vangogh.jpg">
                 <div class="icons">
@@ -22,7 +27,7 @@
                     <img src="images/icon-dm.png">
                 </div>
                 <p><span id="likes">21</span> likes</p>
-                <p><span id="username">vincey1853</span> <span id="comment">just took a few mushrooms lol</span></p>
+                <p id="comment"><span id="username">vincey1853</span> just took a few mushrooms lol</p>
             </div>
         </section>
             
