@@ -28,3 +28,10 @@ const posts = [
     }
 ]
 
+const name = document.getElementById("name")
+const username = document.getElementById("username")
+const location = document.getElementById("location")
+const avatar = document.getElementById("avatar")
+const post = document.getElementById("post")
+const comment = document.getElementById("comment")
+const likes = document.getElementById("likes")
