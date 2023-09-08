@@ -28,10 +28,35 @@ const posts = [
     }
 ]
 
-const name = document.getElementById("name")
-const username = document.getElementById("username")
-const location = document.getElementById("location")
-const avatar = document.getElementById("avatar")
-const post = document.getElementById("post")
-const comment = document.getElementById("comment")
-const likes = document.getElementById("likes")
+const sectionEl = document.getElementById("section")
+
+function createPost(n) {
+    sectionEl.innerHTML += `
+    <div class="container">
+    <div class="post-header">
+        <img class="avatar" id="avatar" src=${posts[n].avatar}>
+        <div>
+            <h2 id="name">${posts[n].name}</h2>
+            <p id="location">${posts[n].location}</p>
+        </div>
+    </div>
+    <img id="post" src=${posts[n].post}>
+    <div class="icons">
+        <img onclick="${newLikes(n)}" id="heart-icon" src="images/icon-heart.png">
+        <img src="images/icon-comment.png">
+        <img src="images/icon-dm.png">
+    </div>
+    <p><span id="likes">${posts[n].likes}</span> likes</p>
+    <p id="comment"><span id="username">${posts[n].username}</span> ${posts[n].comment}</p>
+</div>
+`
+}
+
+for (let i = 0; i < posts.length; i++) {
+    createPost(i)
+}
+
+function newLikes(n) {
+    posts[n].likes++
+}
+
